@@ -7,7 +7,8 @@ cd $(dirname $0)
 # REVISION=$(curl -s -S $LASTCHANGE_URL)
 
 # To get the fixed, use:
-REVISION="${$1:-1237486}"
+GIVEN_REV=$1
+REVISION="${GIVEN_REV:-1237486}"
 
 echo "Used revision is $REVISION"
 
